@@ -47,7 +47,23 @@ fun QuizScreen() {
                 "Retrofit ছাড়া HTTP GET কাজ করে না"
             ),
             answer = 1
-        )
+        ),
+        // নতুন প্রশ্ন ৬
+                Question(text = "Retrofit কি internally OkHttp use করে?",
+                    options = listOf("Yes it does", "No"),
+                    answer = 0
+    ),
+    // নতুন প্রশ্ন ৭
+    Question(
+        text = "OkHttp এখানে কী করে, যখন Retrofit library ব্যবহার হয়?",
+        options = listOf(
+            "idle থাকে",
+            "কিছুই করে না",
+            "connection তৈরি, request পাঠানো, response আনা, caching, interceptors, error handling — সব OkHttp করে। ",
+            "Do Nothing"
+        ),
+        answer = 2
+    )
     )
 
     var currentIndex by remember { mutableIntStateOf(0) }
